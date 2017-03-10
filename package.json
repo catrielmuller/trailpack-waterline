@@ -36,8 +36,8 @@
     "hoek": "^4.0.0",
     "joi": "^10.0.5",
     "lodash": "^4.17.2",
-    "trailpack": "^2.0.0-rc1",
-    "waterline": "^0.12.1"
+    "offshore": "^0.1.1",
+    "trailpack": "^2.0.0-rc1"
   },
   "devDependencies": {
     "eslint": "^2.5.1",
