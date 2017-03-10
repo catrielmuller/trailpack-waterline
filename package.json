@@ -37,7 +37,8 @@
     "joi": "^10.0.5",
     "lodash": "^4.17.2",
     "offshore": "^0.1.1",
-    "trailpack": "^2.0.0-rc1"
+    "trailpack": "^2.0.0-rc1",
+    "waterline": "^0.11.11"
   },
   "devDependencies": {
     "eslint": "^2.5.1",
