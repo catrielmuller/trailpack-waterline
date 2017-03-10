@@ -45,10 +45,10 @@
     "hoek": "^4.0.0",
     "joi": "^8.1.0",
     "lodash": "^4.13.1",
+    "offshore": "^0.1.1",
     "trailpack-datastore": "^1.0.1",
     "trails-controller": "^1.0.0-beta-2",
-    "trails-service": "^1.0.0-beta-2",
-    "waterline": "^0.12.1"
+    "trails-service": "^1.0.0-beta-2"
   },
   "eslintConfig": {
     "extends": "trails"

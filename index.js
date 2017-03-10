@@ -2,7 +2,7 @@
 
 const _ = require('lodash')
 const DatastoreTrailpack = require('trailpack-datastore')
-const Waterline = require('waterline')
+const Offshore = require('offshore')
 const lib = require('./lib')
 
 /**
@@ -33,7 +33,7 @@ module.exports = class WaterlineTrailpack extends DatastoreTrailpack {
 
     _.merge(this.app.config, lib.FailsafeConfig)
 
-    this.wl = new Waterline()
+    this.wl = new Offshore()
   }
 
   /**
@@ -46,10 +46,10 @@ module.exports = class WaterlineTrailpack extends DatastoreTrailpack {
     this.connections = lib.Transformer.transformConnections(this.app)
 
     _.map(this.models, model => {
-      this.wl.loadCollection(Waterline.Collection.extend(model))
+      this.wl.loadCollection(Offshore.Collection.extend(model))
     })
 
-    const wlConfig = { adapters: this.adapters, connections: this.connections }
+    const wlConfig = { compat: "waterline", adapters: this.adapters, connections: this.connections }
     return new Promise((resolve, reject) => {
       this.wl.initialize(wlConfig, (err, orm) => {
         if (err) return reject(err)
