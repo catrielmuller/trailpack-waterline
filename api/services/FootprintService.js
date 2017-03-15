@@ -55,6 +55,10 @@ module.exports = class FootprintService extends Service {
       }
     }
 
+    if(_.isString(modelOptions.populate) && modelOptions.populate.indexOf(",")){
+        modelOptions.populate = modelOptions.populate.split(',')
+    }
+
     if (_.isString(modelOptions.populate)) {
       query = query.populate(modelOptions.populate)
     }
