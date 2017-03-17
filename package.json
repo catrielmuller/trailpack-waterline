@@ -48,7 +48,7 @@
     "trailpack-datastore": "^1.0.1",
     "trails-controller": "^1.0.0-beta-2",
     "trails-service": "^1.0.0-beta-2",
-    "waterline": "Atlantis-Software/offshore#6aa47ef6ab550260fc4c90f94d2c1a338a395c6e"
+    "waterline": "catrielmuller/waterline#deep-branch"
   },
   "eslintConfig": {
     "extends": "trails"
